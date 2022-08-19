@@ -1,3 +1,22 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": ["next/core-web-vitals", "prettier"],
+  "plugins": ["prettier"],
+  "rules": {
+    "import/no-cycle": ["error", { "maxDepth": "∞" }],
+    "no-unused-expressions": "warn",
+    "no-unused-vars": "warn",
+    "no-console": ["warn", { "allow": ["error"] }],
+    "no-const-assign": "error",
+    "no-fallthrough": "error",
+    "no-redeclare": "error",
+    "no-mixed-spaces-and-tabs": "error",
+    "no-undef": "error",
+    "eqeqeq": "warn",
+    "react/jsx-key": "error",
+    "array-callback-return": "error",
+    "dot-notation": "error",
+    "object-shorthand": ["error", "always"],
+    "prettier/prettier": "error",
+    "linebreak-style": ["error", "unix"]
+  }
 }
